@@ -2,22 +2,22 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  var sname ="amit"
+  var age = 30
+  var isActive = true
+
+  //jsx
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>HELLO ALL</h1>
+        <h2>ALL TAG MUST HAVE CLOSING TAG</h2>
+        {sname}
+        <h1>NAme = {sname}</h1>
+        <h2>Age : {age}</h2>
+        <h2>isActive = {isActive == true? "Active":"Not Active"}</h2>
     </div>
   );
 }

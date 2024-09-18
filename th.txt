@@ -1,0 +1,54 @@
+js :
+json
+arrow function
+string
+array methods
+promise
+async await
+
+
+MERN STACk
+m : mongo
+E express
+r react js
+N node js
+
+react:
+framework:all common logic is developed by fw, developer has to 
+	  focus only on busi logic...
+
+
+form -> validation --->handler --> js -->
+fw : 70%
+
+frontend framework:
+backend framework: server side :
+
+
+SPA: single page application
+
+react js: 
+install  :node js
+NPM: node package manager
+
+C:\Program Files\nodejs\node_modules\npm\node_modules
+
+method -->class -->package -> jar --->jdk -->java
+functions ->build | dist [class] --> node_modules =--> npm -->node
+
+NPX :
+
+D:
+ projects
+    batchname
+       ctrl+l --> cmd
+        in cmd : npx create-react-app learning24evn
+          cd learning24evn
+		code .	
+
+
+at a time we can return only 1 tag
+
+
+
+
