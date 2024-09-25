@@ -1,12 +1,13 @@
 //rfc
 import React from 'react'
 
-export default function Content() {
+export default function Content({title,data}) {
     var sname ="amit"
     var age = 30
     var isActive = true
   return (
     <div style={{backgroundColor:"gray"}}>
+      <p>{title}</p>
         <h1>CONTENT</h1>
         <h1>HELLO ALL</h1>
         <h2>ALL TAG MUST HAVE CLOSING TAG</h2>

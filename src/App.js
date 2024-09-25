@@ -7,6 +7,11 @@ import { Footer } from './component/Footer';
 
 function App() {
 
+  var title = "India"
+  const data = {
+    name: "React",
+    version: "17.0.2"
+  }
  
 
   //jsx
@@ -14,8 +19,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header></Header>
-      <Content></Content>
+      <Header title ={title} data={data}></Header>
+
+      <Content title={title} data={data}></Content>
       <Footer></Footer>
        
     </div>

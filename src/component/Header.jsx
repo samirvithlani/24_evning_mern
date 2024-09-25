@@ -1,7 +1,10 @@
 //rafc
 import React from 'react'
+import { SubHeader } from './SubHeader'
 
-export const Header = () => {
+export const Header = (props) => {
+
+  console.log("header props...",props)
 
   const headerStyle = {
     
@@ -21,6 +24,9 @@ export const Header = () => {
   return (
     <div style={headerStyle}>
         <h1>HEADER COMPONENT</h1>
+        <p>{props.title}</p>
+
+        <SubHeader title ={props.title}></SubHeader>
     </div>
   )
 }

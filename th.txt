@@ -80,3 +80,22 @@ framework: pre defined arch, we have to follow that arch
 //react component starts with cap
 
 we can provide css in 3 ways..
+
+communcation bw component:
+props : parent to child
+
+props : properties
+props is a object
+props is immutable read only
+props is used to pass data from parent to child
+
+props drilling...
+
+
+in props immidiate child component can access data from parent component
+
+
+
+
+context api : parent to child
+redux : parent to child, child to parent, parent to parent, child to child
