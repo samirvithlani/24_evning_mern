@@ -78,3 +78,5 @@ framework: pre defined arch, we have to follow that arch
 
 
 //react component starts with cap
+
+we can provide css in 3 ways..
