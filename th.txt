@@ -50,5 +50,31 @@ D:
 at a time we can return only 1 tag
 
 
+npm install npm -g
+
+componet based arch :
+prod
+cart
+login
+signup
+header
+footer
+
+custom componet :
+
+we can create 2 types of componet:
+class based componet : 16.8
+functional componet : 16.8
+function
+() => {}
 
 
+index.html
+
+index.js --> app.js ->component
+
+library: : pre defined arch, we can create our own arch
+framework: pre defined arch, we have to follow that arch
+
+
+//react component starts with cap
