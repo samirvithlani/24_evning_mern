@@ -99,3 +99,27 @@ in props immidiate child component can access data from parent component
 
 context api : parent to child
 redux : parent to child, child to parent, parent to parent, child to child
+
+
+virtual dom:
+
+DOM: document object model
+
+react change : ---> virtual dom :
+
+
+virtual dom :
+is light weight copy of dom
+
+original dom compare : virtual dom
+
+[100 el] -> [vc] [2] --> [2]
+
+
+hooks: built in life cycle methods
+useState..
+
+
+
+
+

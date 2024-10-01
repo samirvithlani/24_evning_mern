@@ -4,6 +4,7 @@ import {Header} from './component/Header'
 import Content from './component/Content'; //export default
 import { Footer } from './component/Footer';
 import { PlayGround } from './component/PlayGround';
+import { UseStateDemo } from './component/UseStateDemo';
 
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
 
       {/* <Content title={title} data={data}></Content> */}
       {/* <Footer></Footer> */}
-      <PlayGround/>
+      {/* <PlayGround/> */}
+      <UseStateDemo/>
        
     </div>
   );
