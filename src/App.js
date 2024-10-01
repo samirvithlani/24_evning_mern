@@ -3,6 +3,7 @@ import './App.css';
 import {Header} from './component/Header'
 import Content from './component/Content'; //export default
 import { Footer } from './component/Footer';
+import { PlayGround } from './component/PlayGround';
 
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
     <div className="App">
       <Header title ={title} data={data}></Header>
 
-      <Content title={title} data={data}></Content>
-      <Footer></Footer>
+      {/* <Content title={title} data={data}></Content> */}
+      {/* <Footer></Footer> */}
+      <PlayGround/>
        
     </div>
   );

@@ -1,6 +1,7 @@
 //rafc
 import React from 'react'
 import { SubHeader } from './SubHeader'
+import { MyButton } from '../common/MyButton'
 
 export const Header = (props) => {
 
@@ -25,8 +26,9 @@ export const Header = (props) => {
     <div style={headerStyle}>
         <h1>HEADER COMPONENT</h1>
         <p>{props.title}</p>
+        <MyButton name="sub"></MyButton>
 
-        <SubHeader title ={props.title}></SubHeader>
+        {/* <SubHeader title ={props.title}></SubHeader> */}
     </div>
   )
 }
