@@ -6,6 +6,12 @@ import { Footer } from './component/Footer';
 import { PlayGround } from './component/PlayGround';
 import { UseStateDemo } from './component/UseStateDemo';
 import { Loader } from './common/Loader';
+import { Route, Routes } from 'react-router-dom';
+import { Navbar } from './component/Navbar';
+import { NetflixMovies } from './component/netflix/NetflixMovies';
+import { NetflixShows } from './component/netflix/NetflixShows';
+import { NetflixHome } from './component/netflix/NetflixHome';
+import { Error404 } from './component/netflix/Error404';
 
 
 function App() {
@@ -22,13 +28,23 @@ function App() {
 
   return (
     <div className="App">
-      <Header title ={title} data={data}></Header>
+      {/* <Header title ={title} data={data}></Header> */}
+      <Navbar></Navbar>
+      <Routes>
+        <Route path="/netflixmovies" element = {<NetflixMovies/>}></Route>
+        <Route path="/netflixshows" element ={<NetflixShows/>}></Route>
+        <Route path ="/" element ={<NetflixHome/>}></Route>
+        {/* <Route path ="/*" element ={<h1>404</h1>}></Route> */}
+        <Route path ="/*" element ={<Error404/>}></Route>
+      </Routes>
+
+
 
       {/* <Content title={title} data={data}></Content> */}
       {/* <Footer></Footer> */}
       {/* <PlayGround/> */}
       {/* <UseStateDemo/> */}
-      <Loader></Loader>
+      {/* <Loader></Loader> */}
        
     </div>
   );

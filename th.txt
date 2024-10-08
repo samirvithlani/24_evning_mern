@@ -120,6 +120,14 @@ hooks: built in life cycle methods
 useState..
 
 
+react routing....
+
+react-router-dom v6.x
+<BrowserRouter> : enable routing in your react app
+<Routes> : define routes in your app
+<Route> : define a route
+
+
 
 
 
