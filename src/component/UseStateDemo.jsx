@@ -5,7 +5,7 @@ export const UseStateDemo = () => {
     //var count = 0;
     
     //const [flag, setflag] = useState(false)
-    //const [users, setusers] = useState([])
+    //const [users, setusers] = useState([{},{},{}])
     //const [user, setuser] = useState({})
     //count --> state variable
     //setCount --> function to update the state variable

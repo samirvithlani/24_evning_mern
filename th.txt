@@ -127,6 +127,12 @@ react-router-dom v6.x
 <Routes> : define routes in your app
 <Route> : define a route
 
+//create 1 component namedProductList : regsiter in routing...
+
+//declare 1 array of product as useSatte in it. id,name,price,qty,color
+//display product data in table format [use bootstrap table ]
+//add 1 button in each row of table named delete..
+
 
 
 
