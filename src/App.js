@@ -15,6 +15,7 @@ import { Error404 } from './component/netflix/Error404';
 import { Thriller } from './component/netflix/Thriller';
 import { PlayContent } from './component/netflix/PlayContent';
 import { ProductList } from './component/ProductList';
+import { CreateUser } from './component/CreateUser';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
         <Route path ="/netflixmovies/thriller" element = {<Thriller/>}></Route>
         <Route path ="/netflix/playcontent/:id" element ={<PlayContent/>}></Route>
         <Route path ="/productlist" element = {<ProductList/>}></Route>
+        <Route path ="/createuser" element ={<CreateUser/>}></Route>
 
         <Route path ="/" element ={<NetflixHome/>}></Route>
         {/* <Route path ="/*" element ={<h1>404</h1>}></Route> */}

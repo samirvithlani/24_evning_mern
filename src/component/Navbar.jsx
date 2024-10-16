@@ -23,8 +23,10 @@ export const Navbar = () => {
         <Link to ="/netflixshows" class="nav-link">Shows</Link>
       </li>
       <li class="nav-item">
-        
         <Link to ="/productlist" class="nav-link">prod list</Link>
+      </li>
+      <li class="nav-item">
+        <Link to ="/createuser" class="nav-link">Create User</Link>
       </li>
     
    
