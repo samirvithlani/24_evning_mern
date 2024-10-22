@@ -28,6 +28,12 @@ export const Navbar = () => {
       <li class="nav-item">
         <Link to ="/createuser" class="nav-link">Create User</Link>
       </li>
+      <li class="nav-item">
+        <Link to ="/textarea" class="nav-link">text</Link>
+      </li>
+      <li class="nav-item">
+        <Link to ="/apidemo1" class="nav-link">API DEMO 1</Link>
+      </li>
     
    
     </ul>

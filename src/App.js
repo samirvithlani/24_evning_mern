@@ -16,6 +16,8 @@ import { Thriller } from './component/netflix/Thriller';
 import { PlayContent } from './component/netflix/PlayContent';
 import { ProductList } from './component/ProductList';
 import { CreateUser } from './component/CreateUser';
+import { TextForm } from './component/TextForm';
+import { ApiDemo1 } from './component/api/ApiDemo1';
 
 
 function App() {
@@ -41,6 +43,8 @@ function App() {
         <Route path ="/netflix/playcontent/:id" element ={<PlayContent/>}></Route>
         <Route path ="/productlist" element = {<ProductList/>}></Route>
         <Route path ="/createuser" element ={<CreateUser/>}></Route>
+        <Route path ="/textarea" element = {<TextForm/>}></Route>
+        <Route path ="/apidemo1" element ={<ApiDemo1/>}></Route>
 
         <Route path ="/" element ={<NetflixHome/>}></Route>
         {/* <Route path ="/*" element ={<h1>404</h1>}></Route> */}
