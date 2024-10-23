@@ -133,7 +133,48 @@ react-router-dom v6.x
 //display product data in table format [use bootstrap table ]
 //add 1 button in each row of table named delete..
 
+API : app prog interface
+-------------------------
+
+use:
+mvc : java : jsp servlet :
+mvvm: m to v v model : API : angular:
+
+n tire application :
+API 
 
 
+android phn google form:
+
+submit --> [API] google server -->
 
 
+google form : go lang:
+
+API expose : url :--> 
+
+andorind : java | ko...
+
+
+uber,zom : map : google map:
+
+google api : -> lat long:
+
+react : api[node,java,php,....]
+
+
+FORM : method : post get
+GET : db data fetch
+POST: create
+PUT : UPDATE
+DELETE:
+PATCH: part update:
+
+get : 
+
+form:
+
+post
+
+
+axios:
