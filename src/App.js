@@ -20,6 +20,8 @@ import { TextForm } from './component/TextForm';
 import { ApiDemo1 } from './component/api/ApiDemo1';
 import { ApiDemo2 } from './component/api/ApiDemo2';
 import { ApiDemo3 } from './component/api/ApiDemo3';
+import { SearchMovie } from './component/api/ombd/SearchMovie';
+import { MovieDetail } from './component/api/ombd/MovieDetail';
 
 
 function App() {
@@ -49,6 +51,8 @@ function App() {
         <Route path ="/apidemo1" element ={<ApiDemo1/>}></Route>
         <Route path='/apidemo2' element ={<ApiDemo2/>}></Route>
         <Route path='/apidemo3' element ={<ApiDemo3/>}></Route>
+        <Route path ="/searchmovie" element = {<SearchMovie/>}></Route>
+        <Route path ="/moviedetail/:id" element = {<MovieDetail/>}></Route>
 
         <Route path ="/" element ={<NetflixHome/>}></Route>
         {/* <Route path ="/*" element ={<h1>404</h1>}></Route> */}
