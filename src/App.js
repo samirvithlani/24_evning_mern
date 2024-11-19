@@ -22,6 +22,8 @@ import { ApiDemo2 } from './component/api/ApiDemo2';
 import { ApiDemo3 } from './component/api/ApiDemo3';
 import { SearchMovie } from './component/api/ombd/SearchMovie';
 import { MovieDetail } from './component/api/ombd/MovieDetail';
+import { ApiDemo4 } from './component/api/ApiDemo4';
+import { ApiDemo5 } from './component/api/ApiDemo5';
 
 
 function App() {
@@ -53,6 +55,7 @@ function App() {
         <Route path='/apidemo3' element ={<ApiDemo3/>}></Route>
         <Route path ="/searchmovie" element = {<SearchMovie/>}></Route>
         <Route path ="/moviedetail/:id" element = {<MovieDetail/>}></Route>
+        <Route path='/apidemo4' element = {<ApiDemo5/>}></Route>
 
         <Route path ="/" element ={<NetflixHome/>}></Route>
         {/* <Route path ="/*" element ={<h1>404</h1>}></Route> */}
