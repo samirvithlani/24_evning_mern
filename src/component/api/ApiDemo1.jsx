@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { Button, Modal } from 'react-bootstrap'
 
 export const ApiDemo1 = () => {
 
@@ -7,6 +8,8 @@ export const ApiDemo1 = () => {
 
     const [message, setmessage] = useState("")
     const [users, setusers] = useState([])
+    const [show, setshow] = useState(false)
+    const [user, setuser] = useState({})
 
     const getUserData=  async()=>{
 
@@ -35,6 +38,18 @@ export const ApiDemo1 = () => {
       getUserData()
       
     }, [])
+
+    const detailUser = async(id)=>{
+
+      const res = await axios.get(`https://node5.onrender.com/user/user/${id}`)
+      //console.log("response...",res.data)
+      setuser(res.data.data)
+
+      setshow(true)
+    }
+    const handleClose = () =>{
+      setshow(false)
+    };
     
 
 
@@ -63,6 +78,7 @@ export const ApiDemo1 = () => {
                     <td>{user.age}</td>
                     <td>
                       <button onClick={()=>{deleteUser(user._id)}} className='btn btn-danger'>DELETE</button>
+                      <button onClick={()=>{detailUser(user._id)}} className='btn btn-primary'>DETAIL</button>
                     </td>
                   </tr>
                 )
@@ -71,6 +87,24 @@ export const ApiDemo1 = () => {
             }
           </tbody>
         </table>
+
+        <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>USER DETAIL</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{user?.name}
+          EMAIL : <p>{user?.email}</p>
+          AGE : <p>{user?.age}</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 
 
        
