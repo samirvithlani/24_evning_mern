@@ -24,6 +24,7 @@ import { SearchMovie } from './component/api/ombd/SearchMovie';
 import { MovieDetail } from './component/api/ombd/MovieDetail';
 import { ApiDemo4 } from './component/api/ApiDemo4';
 import { ApiDemo5 } from './component/api/ApiDemo5';
+import { UseEffectDemo } from './component/UseEffectDemo';
 
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
         <Route path ="/searchmovie" element = {<SearchMovie/>}></Route>
         <Route path ="/moviedetail/:id" element = {<MovieDetail/>}></Route>
         <Route path='/apidemo4' element = {<ApiDemo5/>}></Route>
+        <Route path='/useffectdemo' element ={<UseEffectDemo/>}></Route>
 
         <Route path ="/" element ={<NetflixHome/>}></Route>
         {/* <Route path ="/*" element ={<h1>404</h1>}></Route> */}

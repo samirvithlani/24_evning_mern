@@ -178,3 +178,10 @@ post
 
 
 axios:
+
+
+useEffect: to handle side effct in react componet will:
+
+chat application : hi -->
+
+useEffect is life cycle method in react componet
