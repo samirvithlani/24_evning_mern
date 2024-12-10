@@ -45,6 +45,9 @@ export const Navbar = () => {
       <li class="nav-item">
         <Link to ="/useffectdemo" class="nav-link"> useffectdemo</Link>
       </li>
+      <li class="nav-item">
+        <Link to ="/formdemo1" class="nav-link"> Form Demo 1</Link>
+      </li>
     
    
     </ul>

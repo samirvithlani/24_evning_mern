@@ -185,3 +185,22 @@ useEffect: to handle side effct in react componet will:
 chat application : hi -->
 
 useEffect is life cycle method in react componet
+
+https://react-hook-form.com/get-started#Integratinganexistingform
+
+form handling...
+react-hook-form
+
+//register... object 
+submitHandler(data)
+handleSubmit(cb){
+
+   var name = document.getElmeentById("name").value
+   data = {
+
+      name:name
+   }
+
+cb(data)
+
+}
