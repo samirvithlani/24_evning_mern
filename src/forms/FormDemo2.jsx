@@ -7,6 +7,11 @@ export const FormDemo2 = () => {
     const submitHandler = (data)=>{
         console.log(data)
     }
+
+    const validateHobbies = (value)=>{
+        return value?.length>=2 || "Select atleast 2 Hobbies"
+    }
+    
     const validationSchema ={
         age:{
             required:{
@@ -52,6 +57,13 @@ export const FormDemo2 = () => {
                 <label>Mobile</label>
                 <input type='text' {...register("mobile",validationSchema.mobile)}></input>
                 <span>{errors?.mobile?.message}</span>
+            </div>
+            <div>
+                <label>HOBBIES</label>
+                Cricket: <input type='checkbox' value="cricket"{...register("hobbies",{validate:validateHobbies})}></input>
+                Chess: <input type='checkbox' value="chess"{...register("hobbies",{validate:validateHobbies})}></input>
+                abc: <input type='checkbox' value="abc"{...register("hobbies",{validate:validateHobbies})}></input>
+                <span>{errors?.hobbies?.message}</span>
             </div>
             <div>
                 <input type='submit' value="submit"></input>
