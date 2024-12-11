@@ -204,3 +204,10 @@ handleSubmit(cb){
 cb(data)
 
 }
+
+
+{
+   required:{
+      value:true,message:"Name is Required*"
+      }
+}
