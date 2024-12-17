@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Button, Modal } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 export const ApiDemo1 = () => {
 
@@ -79,6 +80,7 @@ export const ApiDemo1 = () => {
                     <td>
                       <button onClick={()=>{deleteUser(user._id)}} className='btn btn-danger'>DELETE</button>
                       <button onClick={()=>{detailUser(user._id)}} className='btn btn-primary'>DETAIL</button>
+                      <Link to={`/edituser/${user._id}`} className='btn btn-warning'>update</Link>
                     </td>
                   </tr>
                 )

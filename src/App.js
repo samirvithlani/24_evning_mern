@@ -27,6 +27,8 @@ import { ApiDemo5 } from './component/api/ApiDemo5';
 import { UseEffectDemo } from './component/UseEffectDemo';
 import { FormDemo1 } from './forms/FormDemo1';
 import { FormDemo2 } from './forms/FormDemo2';
+import { ApiWithFrom } from './component/api/ApiWithFrom';
+import { EditUser } from './component/api/EditUser';
 
 
 function App() {
@@ -61,6 +63,8 @@ function App() {
         <Route path='/apidemo4' element = {<ApiDemo5/>}></Route>
         <Route path='/useffectdemo' element ={<UseEffectDemo/>}></Route>
         <Route path='/formdemo1' element ={<FormDemo2/>}></Route>
+        <Route path='/formwithapi' element ={<ApiWithFrom/>}></Route>
+        <Route path='/edituser/:id' element = {<EditUser/>}></Route>
 
         <Route path ="/" element ={<NetflixHome/>}></Route>
         {/* <Route path ="/*" element ={<h1>404</h1>}></Route> */}
