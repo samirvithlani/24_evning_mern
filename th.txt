@@ -98,6 +98,13 @@ in props immidiate child component can access data from parent component
 
 
 context api : parent to child
+   context built in ....
+
+         products
+ADD PRODUCT        View Product
+                          Filter Products         
+
+
 redux : parent to child, child to parent, parent to parent, child to child
 
 
@@ -211,3 +218,5 @@ cb(data)
       value:true,message:"Name is Required*"
       }
 }
+
+

@@ -52,6 +52,12 @@ export const Navbar = () => {
       <li class="nav-item">
         <Link to ="/formwithapi" class="nav-link">formwithapi</Link>
       </li>
+      <li class="nav-item">
+        <Link to ="/speechtotext" class="nav-link">speechtotext</Link>
+      </li>
+      <li class="nav-item">
+        <Link to ="/products" class="nav-link">products</Link>
+      </li>
     
    
     </ul>

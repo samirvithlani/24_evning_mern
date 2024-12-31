@@ -29,6 +29,8 @@ import { FormDemo1 } from './forms/FormDemo1';
 import { FormDemo2 } from './forms/FormDemo2';
 import { ApiWithFrom } from './component/api/ApiWithFrom';
 import { EditUser } from './component/api/EditUser';
+import SpeechToText from './component/SpeecttoTxt';
+import { Products } from './component/products/Products';
 
 
 function App() {
@@ -64,7 +66,9 @@ function App() {
         <Route path='/useffectdemo' element ={<UseEffectDemo/>}></Route>
         <Route path='/formdemo1' element ={<FormDemo2/>}></Route>
         <Route path='/formwithapi' element ={<ApiWithFrom/>}></Route>
+        <Route path="/speechtotext" element ={<SpeechToText/>}></Route>
         <Route path='/edituser/:id' element = {<EditUser/>}></Route>
+        <Route path='/products' element ={<Products/>}></Route>
 
         <Route path ="/" element ={<NetflixHome/>}></Route>
         {/* <Route path ="/*" element ={<h1>404</h1>}></Route> */}
